@@ -1,0 +1,26 @@
+[
+    {
+        "code": "1",
+        "name": "Metodología de Sistemas"
+    },
+    {
+        "code": "2",
+        "name": "Ciencias de la Computación"
+    },    
+    {
+        "code": "3",
+        "name": "Desarrollo de Software"
+    },    
+    {
+        "code": "4",
+        "name": "Ciencias Básicas y Complementarias"
+    },    
+    {
+        "code": "5",
+        "name": "EPS"
+    },
+    {
+        "code": "6",
+        "name": "Diplomado en Administración"
+    }
+]
