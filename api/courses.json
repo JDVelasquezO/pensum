@@ -1,10 +1,46 @@
 [
     {
-        "code": "017",
+        "code": 17,
         "semester": "first",
         "year": "one",
         "name": "Social Humanística 1",
         "credits": 4,
-        "area": "4"
+        "area": "4",
+        "pre": null,
+        "post": [ 19 ],
+        "status": true
+    },
+    {
+        "code": 101,
+        "semester": "first",
+        "year": "one",
+        "name": "Matemática Básica 1",
+        "credits": 7,
+        "area": 4,
+        "pre": null,
+        "post": [ 103, 147 ],
+        "status": true
+    },
+    {
+        "code": 103,
+        "semester": "first",
+        "year": "one",
+        "name": "Matemática Básica 2",
+        "credits": 7,
+        "area": 4,
+        "pre": [ 101 ],
+        "post": [ 107 ],
+        "status": false
+    },    
+    {
+        "code": 147,
+        "semester": "first",
+        "year": "one",
+        "name": "Física Básica",
+        "credits": 4,
+        "area": 4,
+        "pre": [ 101 ],
+        "post": [ 150 ],
+        "status": false
     }
 ]

@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        .course{
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
+
+    <div class="container">
+        <h2>Pensum</h2>
+        <main id="app">
+
+            <div id="courses">
+                <div class="divider"></div>
+                <div class="section">
+                  <div v-for="course in courses" v-if='course.status' class="row">
+                        <div @click='showChildrenCourse(course.code)' class="course col s12 orange lighten-2">
+                          {{ course.code }} - {{ course.name }}
+                        </div>
+                  </div>
+                </div>
+            </div>
+
+            <!-- <div class="divider"></div>
+            <div class="section">
+            <div class="row">
+                <div class="course col s6 orange lighten-2">Matemática Básica 2</div>
+                <div class="course col s6 orange lighten-2">Física Básica</div>
+            </div>
+            </div> -->
+            
+        </main>
+    </div>
     
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
